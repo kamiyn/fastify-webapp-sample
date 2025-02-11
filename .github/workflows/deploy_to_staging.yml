@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/railwayapp/cli:latest
     env:
-      SVC_ID: ${{ env.RAILWAY_SERVICE_ID }}
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_STAGING }}
 
     steps:
@@ -23,4 +22,4 @@ jobs:
           node-version: 20.x
 
       - name: Deploy
-        run: railway up --ci --service ${{ env.SVC_ID }} --environment staging
+        run: railway up --ci --service ${{ env.RAILWAY_SERVICE_ID }} --environment staging
