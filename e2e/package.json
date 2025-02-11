@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "shell": "codeceptjs shell",
-    "test": "codeceptjs run --steps"
+    "test": "codeceptjs run --steps",
+    "allure:serve": "npx allure-commandline serve --port 46307"
   },
-  "keywords": [],
+  "keywords": [
+    "allure-commandline のため VSCode on WSL2 でポートの転送を実施する"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "allure-codeceptjs": "^2.15.1",
     "codeceptjs": "^3.3.7",
     "playwright": "^1.30.0"
   }
