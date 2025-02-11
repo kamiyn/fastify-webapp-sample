@@ -1,0 +1,1 @@
+[{"uid":"db48d30d4035c08f","name":"ログインし、お弁当を注文し、お弁当を受け取る","time":{"start":1739275761725,"stop":1739275766147,"duration":4422},"status":"passed","severity":"normal"},{"uid":"69c36304befe7e6f","name":"ユーザーが存在しないURLにアクセスすると、エラーメッセージと商品一覧へのリンクが表示される","time":{"start":1739275760165,"stop":1739275761720,"duration":1555},"status":"passed","severity":"normal"}]
