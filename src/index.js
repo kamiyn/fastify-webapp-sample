@@ -24,9 +24,8 @@ server.register(view, {
 
 server.register(formbody)
 
-const connectionString = `postgres://${process.env.PGUSER}:${process.env.PGPASSWORD}@${process.env.PGHOST}:${process.env.PGPORT}`;
 server.register(postgres, {
-  connectionString
+  connectionString: process.env.DATABASE_PUBLIC_URL
 })
 
 const passport = await authConfig(server)

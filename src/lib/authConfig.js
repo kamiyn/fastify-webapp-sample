@@ -10,10 +10,7 @@ export default async function authConfig(server) {
   const passport = new Authenticator();
   server.register(cookie);
   const pgPool = new pg.Pool({
-    host: process.env.PGHOST,
-    port: process.env.PGPORT,
-    user: process.env.PGUSER,
-    password: process.env.PGPASSWORD,
+    connectionString: process.env.DATABASE_PUBLIC_URL,
     max: 20,
   });
   const pgSession = new connectPgSimple(session)

@@ -177,11 +177,7 @@ $ openssl rand -hex 32
 
 データベースへのアクセス設定を追加します。
 
-- PGHOST
-- PGDATABASE
-- PGPASSWORD
-- PGPORT
-- PGUSER
+- DATABASE_PUBLIC_URL
 
 値には Postgres サービスのものを設定します。 Railway のドキュメントを参考に設定してください。
 

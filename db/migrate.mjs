@@ -10,11 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 async function main() {
   // Create a client of your choice
   const client = new pg.Client({
-    host: process.env.PGHOST,
-    port: process.env.PGPORT,
-    database: process.env.PGDATABASE,
-    user: process.env.PGUSER,
-    password: process.env.PGPASSWORD,
+    connectionString: process.env.DATABASE_PUBLIC_URL
   });
 
   try {
