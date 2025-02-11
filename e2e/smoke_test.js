@@ -1,5 +1,6 @@
-Feature('smoke');
+Feature('スモークテスト');
 
-Scenario('test something',  ({ I }) => {
-
+Scenario('example.comにアクセスする', ({ I }) => {
+    I.amOnPage('https://example.com')
+    I.see('Example Domain')
 });
