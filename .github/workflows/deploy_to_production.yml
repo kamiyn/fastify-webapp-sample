@@ -1,0 +1,22 @@
+name: Deploy to Production
+
+on:
+  workflow_run:
+    workflows:
+      - "Run E2E test"
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container: ghcr.io/railwayapp/cli:3.21.0
+    env:
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_PRODUCTION }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy
+        run: railway up --ci --service ${{ vars.RAILWAY_SERVICE_ID }} --environment production
