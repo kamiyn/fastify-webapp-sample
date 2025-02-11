@@ -1,0 +1,1 @@
+{"c5ab311dc4f5121dc9ac35de54e3eefd":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"c985c64f9c97538c","reportUrl":"https://kamiyn.github.io/fastify-webapp-sample/4//#testresult/c985c64f9c97538c","status":"passed","time":{"start":1739267811210,"stop":1739267815213,"duration":4003}}]}}
